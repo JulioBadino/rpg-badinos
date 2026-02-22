@@ -1,4 +1,15 @@
-# rpg-badinos
+# Badinos best game
 
-Oi, Júlio. Vamos definir aqui o que o nosso jogo vai fazer, e depois disso vamos implementar o codigo.
-beleza roldao, vamos começar o mais rapido possivel
+## Inicio do Jogo
+O jogador irá aparecer inicialmente na cidade
+Será exibido um menu para o jogador escolher uma opção. As opções serão
+1 - Falar com ancião da cidade
+ - Caso o player escolha essa opção o ancião dara uma quest para o player fazer
+ 2 - Ir para loja
+ 3 - Ir para floresta
+ 4 - Ir para Esgoto
+ 4 - Sair
+
+
+
+ - Se o jogador digitar --i será listado o inventario dele
