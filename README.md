@@ -7,9 +7,10 @@ Será exibido um menu para o jogador escolher uma opção. As opções serão
  - Caso o player escolha essa opção o ancião dara uma quest para o player fazer
  2 - Ir para loja
  3 - Ir para floresta
- 4 - Ir para Esgoto
+ 4 - Ir para Esgoto, apenas depois do ancião
  4 - Sair
 
 
 
  - Se o jogador digitar --i será listado o inventario dele
+ 

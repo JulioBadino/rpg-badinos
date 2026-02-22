@@ -3,11 +3,13 @@ import random
 player = input("enter player name:")
 print(f"Welcome, {player}, good luck!")
 
+print("Welcome, " + player + ", good luck")
+
 player_hp = 200
 player_damage = random.randint(1, 100)
 
 
-Weapon = [
+weapon = [
 
    { "name" : "wood sword",
     "wood sworddamage" : player_damage * 0.1,
@@ -47,24 +49,24 @@ print(f"A {firstmonster} apperared in frot of you!!")
 if firstmonster == "goblin":
     monster_hp = goblin_hp
     monster_damage = goblin_damage
-elif firstmonster == "troll":
+if firstmonster == "troll":
     monster_hp = troll_hp
     monster_damage = troll_damage
-elif firstmonster == "baby_dragon":
+if firstmonster == "baby_dragon":
     monster_hp = baby_dragon_hp
     monster_damage = baby_dragon_damage
-elif firstmonster == "orc":
+if firstmonster == "orc":
     monster_hp = orc_hp
     monster_damage = orc_damage
-elif firstmonster == "baboon": 
+if firstmonster == "baboon": 
     monster_hp = baboon_hp
     monster_damage = baboon_damage
     
 while  monster_hp > 0 and player_hp > 0:
     surprise_answer = input("wanna a surprise? (yes/no): ")
     if surprise_answer == "yes":
-        Weapon_drop = random.choices(Weapon, weights=[weapon["drop_chance"] for weapon in Weapon], k=1)
-        dropped_weapon = Weapon_drop[0]
+        weapon_drop = random.choices(weapon, weights=[weapon["drop_chance"] for weapon in weapon], k=1)
+        dropped_weapon = weapon_drop[0]
         print(f"you found a {dropped_weapon['name']}")
         weapon_damage = list(dropped_weapon.values())[1]   
         print(f"your weapon does {weapon_damage} damage")
@@ -99,8 +101,4 @@ while monster_hp > 0 and player_hp > 0:
     if ready == "no":
         print("you fled the battle!")
         break
-        if ready != "yes" and ready != "no":
-            print("invalid answer, please enter yes or no")
-            continue  # Prompt the user again for a valid answer   
-        else:
-            continue # Prompt the user again for a valid answer
+        
