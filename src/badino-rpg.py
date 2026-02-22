@@ -5,7 +5,7 @@ print(f"Welcome, {player}, good luck!")
 
 player_hp = 200
 player_damage = random.randint(1, 100)
-import random
+
 
 Weapon = [
 
