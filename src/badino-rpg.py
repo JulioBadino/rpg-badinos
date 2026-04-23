@@ -21,6 +21,8 @@ if input == "yes":
     # desbloquear esgoto no menu(inicial)
 
 else :
+    #ver como parar
+    print("he's a important npc, are you sure that you wont talk to him?")
     
 
 
