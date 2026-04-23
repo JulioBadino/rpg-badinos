@@ -3,7 +3,28 @@ import random
 player = input("enter player name:")
 print(f"Welcome, {player}, good luck!")
 
-print("Welcome, " + player + ", good luck")
+firstnpc = "oldman"
+
+print(f"an {firstnpc} appears in front of you")
+print(input("do you wanna talk to him? (yes/no): "))
+
+if input == "yes":
+    print("I'm having a trouble with the rats in the city")
+    print(input("Could you help me? (yes/no): "))
+    if input == "yes":
+        print("Thank you boy, take this key, you can now open the sewage")
+        print( )
+        print("you can go to a new place now")
+    else:
+        print("that's a shame, see you later")
+    
+    # desbloquear esgoto no menu(inicial)
+
+else :
+    
+
+
+
 
 player_hp = 200
 player_damage = random.randint(1, 100)
@@ -70,7 +91,7 @@ while  monster_hp > 0 and player_hp > 0:
         print(f"you found a {dropped_weapon['name']}")
         weapon_damage = list(dropped_weapon.values())[1]   
         print(f"your weapon does {weapon_damage} damage")
-        break  # Exit the surpribrse weapon loop
+        break  # Exit the surprise weapon loop
     else:
         if surprise_answer == "no":
             weapon_damage = 0
@@ -101,4 +122,5 @@ while monster_hp > 0 and player_hp > 0:
     if ready == "no":
         print("you fled the battle!")
         break
+
         
