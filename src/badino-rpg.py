@@ -6,9 +6,11 @@ print(f"Welcome, {player}, good luck!")
 firstnpc = "oldman"
 
 print(f"an {firstnpc} appears in front of you")
-print(input("do you wanna talk to him? (yes/no): "))
 
-if input == "yes":
+answer = input("do you wanna talk to him? (yes/no) :")
+
+
+if answer == "yes":
     print("I'm having a trouble with the rats in the city")
     print(input("Could you help me? (yes/no): "))
     if input == "yes":
@@ -22,8 +24,15 @@ if input == "yes":
 
 else :
     #ver como parar
-    print("he's a important npc, are you sure that you wont talk to him?")
-    
+    input("he's a important npc, are you sure that you wont talk to him? (yes/no): " )
+    if input == "yes": 
+        print()
+
+    else:
+        print("I'm having a trouble with the rats in the city")
+        print(input("Could you help me? (yes/no): "))
+        if input == "yes":
+            print("Thanks")
 
 
 
@@ -50,7 +59,7 @@ weapon = [
 ]
 
 
-monsters = ["goblin", "troll", "baby dragon", "orc", "baboon"]
+monsters = ["goblin", "troll", "baby_dragon", "orc", "baboon"]
 goblin_hp = 250
 goblin_damage = random.randint(1, 40)
 
